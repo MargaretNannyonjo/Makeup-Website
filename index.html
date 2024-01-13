@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Beauty Hub</title>
+  </head>
+  <link rel="stylesheet" href="index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="#"><img src="img/logo.jpg" /></a>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="fa fa-bars" aria-hidden="true" id="menu_icon"></i>
+          <i class="fa fa-times" aria-hidden="true" id="close_icon"></i>
+        </label>
+
+        <nav class="navbar">
+          <a href="#home_content" style="--i: 0">Home</a>
+          <a href="#about" style="--i: 1">About Us</a>
+          <a href="#services" style="--i: 2">Our Services</a>
+          <a href="#contact" style="--i: 3">Contact & Media</a>
+        </nav>
+      </header>
+
+      <div class="home_content" id="home_content">
+        <h1>
+          MAR'S <br />
+          BEAUTY HUB
+        </h1>
+        <img src="img/makeup-hair.jpg" />
+
+        <div>
+          <p>Look good, feel good</p>
+          <a href="#"><button class="btn">BOOK AN APPOINTMENT</button></a>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <h2>ABOUT US</h2>
+        <h3>MAKEUP SERVICES</h3>
+        <p>
+          Step into our Studio and let us transform your look! Whether it's for
+          a special occassion, a night out or simply to treat yourself, our
+          makeup artists are here to create flawless looks tailored to your
+          individual style. From subtle, natural enhancements to bold,glamorous
+          statements, we are here to amke your beauty vision a reality.
+        </p>
+        <br />
+        <h4>WIG COLLECTION</h4>
+        <p>
+          Discover our curated collection of high quality wigs that cater to
+          various styles, lengths and colors. Whather you are seeking for a chic
+          new hairstyle or daeling with hairloss, our range of wigs offers
+          versatility and comfort, allowing you to express yourself with
+          confidence.
+        </p>
+      </div>
+
+      <div id="services">
+        <h5>OUR SERVICES</h5>
+        <div class="slideshow-container">
+          <!---slides-->
+          <div class="slide">
+            <img src="img/nails.jpg" alt="slide 1" />
+          </div>
+
+          <div class="slide">
+            <img src="img/nails1.jpg" alt="slide 2" />
+          </div>
+
+          <div class="slide">
+            <img src="img/nails2.jpg" alt="slide 3" />
+          </div>
+
+          <!--Navigation buttons-->
+          <a class="prev" onclick="changeSlide(-1)"><</a>
+          <a class="next" onclick="changeSlide(1)">></a>
+        </div>
+
+        <div class="flex-container">
+          <div class="flex-box"><img src="img/makeup-hair1.jpg" /></div>
+          <div class="flex-box"><img src="img/hair.jpg" /></div>
+          <div class="flex-box"><img src="img/makeup-face.jpg" /></div>
+          <div class="flex-box"><img src="img/makeup-hair.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h6>CONTACT & MEDIA</h6>
+        <div class="form-box">
+        <form action="https://formspree.io/f/xjvqoyav" method="POST">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email" name="email" required>
+          <input type="text" placeholder="Tel No." name="tel no" required>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message" name="msg" required></textarea>
+          <input type="submit" value="Send">
+        </form>
+
+        <div class="social-media">
+          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
